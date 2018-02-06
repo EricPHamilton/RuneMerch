@@ -48,6 +48,7 @@ def display_graph(id):
     plot_data = extract_plot_data(json)
 
 def extract_plot_data(json):
+    plot.close()
     daily = json['daily']
     average = json['average']
 
